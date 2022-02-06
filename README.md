@@ -1,8 +1,7 @@
 # IMDb TV Series Project
 
 ## Directory
-- [Introduction](#introduction)
-- [Objective](#objective)
+- [Background and Objective](#background-and-objective)
 - [Coding Folders](#coding-folders)
 - [Dataset Folders](#dataset-folders)
 - [Note About Data](#note-about-data)
@@ -10,12 +9,9 @@
 - [Tools and Technologies](#tools-and-technologies)
 - [Contact](#contact-info)
 
-## Introduction
+## Background and Objective
 
-
-
-## Objective
-
+IMDB hosts a lot of information about TV shows and movies. It is a web platform that is information rich in terms of details about movies, TV shows or mini-series. The information it has about the movies/TVshows are about the airdate, ratings, descritpion, director, et al. In case of TV shows, it also has information about each episode that can be useful for exploration. Due to its neat setup, IMDb is ripe for data collection. Hence, it is easy to create a data set on the TV shows on IMDb. A lot of people often hype up their favorite TV shows on a weekly basis, and it would be great to actually examine how these shows perform in comparison to one another. Hence, the objective of this project is to collect data on the episodes of all the TV shows in the top 250 TV shows on IMDb. Then, to proceed to analyze them to extract insights on how they perform.
 
 ## Coding Folders
 
