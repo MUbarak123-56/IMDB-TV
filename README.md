@@ -12,11 +12,10 @@
 
 ## Introduction
 
-Attack on Titan has rocked the world of anime ever since it debuted in 2013. It has left its viewers im awe by creating a mystery about the existence of titans who love to consume humans. In order to protect themselves from the titans, humans have been forced to live behind wall for about 100 years. The plot of the show focuses on how humans strive to break free of this predicament as they work towards bringing down the titans. Each episode is geared towards providing its audience with the best form of storytelling ever as every scene acts as a foreshadowing for an event in a future or past episode. Attack on Titan is a show that brings forth a lot of unanswered questions, massive plot twists and action-fueled events. 
+
 
 ## Objective
 
-The objective of this project is to showcase the magnificence of Attack on Titan in the anime community. Data on the best anime will be collected from IMDb to explore Attack on Titan episode ratings in comparison to other anime. The requirement for belonging to the best anime on IMDb are for an anime to have over 10,000 votes as well as belonging to the top 50 highest rated anime on the site. Moreover, subtitle data will be gathered to conduct sentiment analysis on the plot of the show, so each episode's or character's sentiments can be explored over the course of the show. The data gathered from IMDb can also be used to explore Attack on Titan's ratings by analyzing its ratings by episode and total votes by episodes. This will provide information about the progression of Attack on Titan's ratings and viewership over time.
 
 ## Coding Folders
 
@@ -34,11 +33,11 @@ The tv-series-data/ folder contains 250 data sets. Each dataset contains informa
 
 The tv-series-data-named/ folder has the 250 data sets from the tv-series-data/ folder named appropriately with the actual TV show's name. This makes it easy for people who are interested in gathering specific information about a specific TV show.
 
-The cumulative-data/ folder contains three data sets. The IMDb_top_250.csv file collects data on the top 250 rated IMDb TV show, their ratings and a few other information. The tv_dataset.csv is a concatenation of all the 250 datasets in tv-series-data/ folder. The top1000_episodes_imdb.csv file contains information about the top 1000 episodes of IMDb such as episode name, the tv show they belong to and other sorts of information about the episodes.
+The cumulative-data/ folder contains three data sets. The IMDb_top_250.csv file collects data on the top 250 rated IMDb TV show, their ratings and a few other information. The tv_dataset.csv is a concatenation of all the 250 datasets in tv-series-data/ folder. The top1000_episodes_imdb.csv file contains information about the top 1000 episodes of IMDb such as episode name, the TV show they belong to and other sorts of information about the episodes.
 
 ### Note about data
 
-- It was noticed that some Attack on Titan episodes' airdates for season 1 are not chronological. This stems from the fact that the some of the airdates are the english airdate rather than the japanese airdate. Due to the fact that it takes a while to convert an anime from its original language into an english version, the airdates of the same episode tend to be wide apart for both languages.
+- It was noticed that some Attack on Titan episodes' airdates for season 1 are not chronological. This stems from the fact that the some of the airdates are the english airdate rather than the japanese airdate. Due to the fact that it takes a while to convert an anime from its original language into an english version, the airdates of the same episode tend to be wide apart for both languages. This phenomenon may be observed for other animes as well.
 
 ## Resources
 - [Link to Top 250 TV shows on IMDb](https://www.imdb.com/chart/toptv/)
