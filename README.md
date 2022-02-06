@@ -22,9 +22,9 @@ The objective of this project is to showcase the magnificence of Attack on Titan
 
 The coding folders are webscraping-code/ and data-exploration-code/. 
 
-In the webscraping-code folder, there are two coding files named anime-data-collection.ipynb and top1000_episodes_imdb.ipynb. The anime-data-collection.ipynb file contains the code that was used to extract all the top 50 animes on IMDb's data. This is crucial towards assessing how Attack on Titan fares compared to the best animes on IMDb. The top1000_episodes_imdb.ipynb file was used to extract information of the top 1000 episodes on IMDb so they can be used to figure out which animes produce the best episodes on IMDb. 
+In the webscraping-code folder, there are two coding files named tv-data-collection.ipynb and top1000_episodes_imdb.ipynb. The tv-data-collection.ipynb file contains the code that was used to extract all the top 250 TV shows on IMDb's data. This is crucial towards collecting data on the top 250 TV shows on IMDb. The top1000_episodes_imdb.ipynb file was used to extract information of the top 1000 episodes on IMDb so they can be used to figure out which TV shows produce the best episodes on IMDb. 
 
-Under the data-exploration-code/ folder, the data_exploration.ipynb file was used to explore the anime data sets to extract crucial findings about Attack on Titan.
+Under the data-exploration-code/ folder, the data_exploration.ipynb file was used to explore the TV show data sets to extract crucial findings about the TV shows.
 
 ## Dataset Folders
 
