@@ -28,17 +28,16 @@ Under the data-exploration-code/ folder, the data_exploration.ipynb file was use
 
 ## Dataset Folders
 
-There are three dataset folders: anime-series-data/, anime-series-data-named/ and cumulative-data/. 
+There are three dataset folders: tv-series-data/, tv-series-data-named/ and cumulative-data/. 
 
-The anime-series-data/ folder contains 50 data sets. Each dataset contains information about all the episodes' information of a specific anime that belongs to the top 50 rated anime on IMDb. The data sets are named based on their encoded title which is of the format tt_______.csv. The blanks signifies the numbers that are used to act as an identifier for each anime. Saving the anime data sets in this format makes it easy to reference each anime according to its encoded title. If one were interested in accessing an anime page on IMDb, they can easily use the link: https://www.imdb.com/title/tt______/. All they need to do is to replace the tt______ in the link with the one that is used to store the anime data sets' csv file.
+The tv-series-data/ folder contains 250 data sets. Each dataset contains information about all the episodes' information of a specific TV show that belongs to the top 250 rated TV shows on IMDb. The data sets are named based on their encoded title which is of the format tt_______.csv. The blanks signifies the numbers that are used to act as an identifier for each TV show when searching for them on IMDb. Hence, if one were interested in accessing a TV show's page on IMDb, they can easily use the link: https://www.imdb.com/title/tt______/. All they need to do is to replace the tt______ in the link with the one that is used to store the TV show data sets' csv file.
 
-The anime-series-data-named/ folder has the 50 data sets from the anime-series-data/ folder named appropriately with the actual anime name. This makes it easy for people who are interested in gathering specific information about a specific anime.
+The tv-series-data-named/ folder has the 250 data sets from the tv-series-data/ folder named appropriately with the actual TV show's name. This makes it easy for people who are interested in gathering specific information about a specific TV show.
 
-The cumulative-data/ folder contains three data sets. The anime_best_50.csv file is collects data on the top 50 rated anime, their ratings and a few other information. The anime_dataset.csv is a concatenation of all the 50 datasets in anime-series-data/ folder. The top1000_episodes_imdb.csv file contains information about the top 1000 episodes of IMDb such as episode name, the tv show they belong to and other sorts of information
+The cumulative-data/ folder contains three data sets. The IMDb_top_250.csv file collects data on the top 250 rated IMDb TV show, their ratings and a few other information. The tv_dataset.csv is a concatenation of all the 250 datasets in tv-series-data/ folder. The top1000_episodes_imdb.csv file contains information about the top 1000 episodes of IMDb such as episode name, the tv show they belong to and other sorts of information about the episodes.
 
 ### Note about data
 
-- In order to gather the top 50 IMDb anime, all the animes with at least 10,000 votes were collected. Then, the top 50 ones were arranged in descending order in terms of their ratings. Hence, figuring out the top 50 rated anime on IMDb.
 - It was noticed that some Attack on Titan episodes' airdates for season 1 are not chronological. This stems from the fact that the some of the airdates are the english airdate rather than the japanese airdate. Due to the fact that it takes a while to convert an anime from its original language into an english version, the airdates of the same episode tend to be wide apart for both languages.
 
 ## Resources
