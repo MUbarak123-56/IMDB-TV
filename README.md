@@ -1,4 +1,4 @@
-# IMDb Project
+# IMDb TV Series Project
 
 ## Directory
 - [Introduction](#introduction)
