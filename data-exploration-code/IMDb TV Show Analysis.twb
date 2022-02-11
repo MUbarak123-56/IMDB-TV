@@ -1,0 +1,3023 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.21.0822.1058                               -->
+<workbook original-version='18.1' source-build='2020.2.17 (20202.21.0822.1058)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='IMDb_top_250' inline='true' name='federated.130vvcl13t03u314euec501l4czj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='IMDb_top_250' name='textscan.08c6vir05ynfrv103ssld0juq0w0'>
+            <connection class='textscan' directory='C:/Users/ganiy/OneDrive/Documents/IMDB-TV/cumulative-data' filename='IMDb_top_250.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.08c6vir05ynfrv103ssld0juq0w0' name='IMDb_top_250.csv' table='[IMDb_top_250#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='title' ordinal='0' />
+            <column datatype='real' name='rating' ordinal='1' />
+            <column datatype='integer' name='total_votes' ordinal='2' />
+            <column datatype='string' name='description' ordinal='3' />
+            <column datatype='integer' name='year' ordinal='4' />
+            <column datatype='string' name='link' ordinal='5' />
+            <column datatype='string' name='encoded_title' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.08c6vir05ynfrv103ssld0juq0w0' name='IMDb_top_250.csv' table='[IMDb_top_250#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='title' ordinal='0' />
+            <column datatype='real' name='rating' ordinal='1' />
+            <column datatype='integer' name='total_votes' ordinal='2' />
+            <column datatype='string' name='description' ordinal='3' />
+            <column datatype='integer' name='year' ordinal='4' />
+            <column datatype='string' name='link' ordinal='5' />
+            <column datatype='string' name='encoded_title' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[IMDb_top_250.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[IMDb_top_250.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[IMDb_top_250.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_votes]</local-name>
+            <parent-name>[IMDb_top_250.csv]</parent-name>
+            <remote-alias>total_votes</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[IMDb_top_250.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[IMDb_top_250.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[link]</local-name>
+            <parent-name>[IMDb_top_250.csv]</parent-name>
+            <remote-alias>link</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>encoded_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[encoded_title]</local-name>
+            <parent-name>[IMDb_top_250.csv]</parent-name>
+            <remote-alias>encoded_title</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ranking' datatype='integer' name='[Calculation_513973309018107905]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(AVG([rating]), &apos;desc&apos;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Ranking2' datatype='integer' name='[Calculation_513973309027131394]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(SUM([total_votes]), &apos;desc&apos;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Title_encoded' datatype='string' name='[Calculation_513973309034323982]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[title] + &quot; &quot; + [encoded_title]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='IMDb_top_250.csv' datatype='table' name='[__tableau_internal_object_id__].[IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3]' role='measure' type='quantitative' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+      <column caption='Link' datatype='string' name='[link]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Total Votes' datatype='integer' name='[total_votes]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='IMDb_top_250.csv' id='IMDb_top_250.csv_E50F93474B0E45F1A6887454146172F3'>
+            <properties context=''>
+              <relation connection='textscan.08c6vir05ynfrv103ssld0juq0w0' name='IMDb_top_250.csv' table='[IMDb_top_250#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='title' ordinal='0' />
+                  <column datatype='real' name='rating' ordinal='1' />
+                  <column datatype='integer' name='total_votes' ordinal='2' />
+                  <column datatype='string' name='description' ordinal='3' />
+                  <column datatype='integer' name='year' ordinal='4' />
+                  <column datatype='string' name='link' ordinal='5' />
+                  <column datatype='string' name='encoded_title' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='tv_dataset' inline='true' name='federated.1ts58le12zi5t1192bns30fr5htb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tv_dataset' name='textscan.197yfnk078vxrq123nii71jwxg00'>
+            <connection class='textscan' directory='C:/Users/ganiy/OneDrive/Documents/IMDB-TV/cumulative-data' filename='tv_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.197yfnk078vxrq123nii71jwxg00' name='tv_dataset.csv' table='[tv_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv' ordinal='0' />
+            <column datatype='integer' name='season' ordinal='1' />
+            <column datatype='integer' name='episode_number' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='date' name='airdate' ordinal='4' />
+            <column datatype='real' name='rating' ordinal='5' />
+            <column datatype='integer' name='total_votes' ordinal='6' />
+            <column datatype='string' name='desc' ordinal='7' />
+            <column datatype='string' name='encoded_title' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.197yfnk078vxrq123nii71jwxg00' name='tv_dataset.csv' table='[tv_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv' ordinal='0' />
+            <column datatype='integer' name='season' ordinal='1' />
+            <column datatype='integer' name='episode_number' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='date' name='airdate' ordinal='4' />
+            <column datatype='real' name='rating' ordinal='5' />
+            <column datatype='integer' name='total_votes' ordinal='6' />
+            <column datatype='string' name='desc' ordinal='7' />
+            <column datatype='string' name='encoded_title' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tv]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>tv</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[episode_number]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>episode_number</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airdate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[airdate]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>airdate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_votes]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>total_votes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[desc]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>desc</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>encoded_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[encoded_title]</local-name>
+            <parent-name>[tv_dataset.csv]</parent-name>
+            <remote-alias>encoded_title</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ranking' datatype='integer' name='[Calculation_1498009826908364800]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(AVG([rating]), &apos;desc&apos;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='New_Ranking' datatype='integer' name='[Calculation_1498009826912362497]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(AVG([total_votes]), &apos;desc&apos;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='TV_encoded' datatype='string' name='[Calculation_513973309040922640]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[tv] + &quot; &quot; + [encoded_title]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='tv_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8]' role='measure' type='quantitative' />
+      <column caption='Airdate' datatype='date' name='[airdate]' role='dimension' type='ordinal' />
+      <column caption='Desc' datatype='string' name='[desc]' role='dimension' type='nominal' />
+      <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+      <column caption='Episode Number' datatype='integer' name='[episode_number]' role='dimension' type='ordinal' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Season' datatype='integer' name='[season]' role='dimension' type='ordinal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Total Votes' datatype='integer' name='[total_votes]' role='measure' type='quantitative' />
+      <column caption='Tv' datatype='string' name='[tv]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='tv_dataset.csv' id='tv_dataset.csv_60165544509C4B3489B8A9C11590E0E8'>
+            <properties context=''>
+              <relation connection='textscan.197yfnk078vxrq123nii71jwxg00' name='tv_dataset.csv' table='[tv_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='tv' ordinal='0' />
+                  <column datatype='integer' name='season' ordinal='1' />
+                  <column datatype='integer' name='episode_number' ordinal='2' />
+                  <column datatype='string' name='title' ordinal='3' />
+                  <column datatype='date' name='airdate' ordinal='4' />
+                  <column datatype='real' name='rating' ordinal='5' />
+                  <column datatype='integer' name='total_votes' ordinal='6' />
+                  <column datatype='string' name='desc' ordinal='7' />
+                  <column datatype='string' name='encoded_title' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='best_episodes_top10' inline='true' name='federated.07tv33b0k5bph114k41uz1gte5hw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='best_episodes_top10' name='textscan.0urnjcp1fgsul41dyhxpy1gcttq3'>
+            <connection class='textscan' directory='C:/Users/ganiy/OneDrive/Documents/IMDB-TV/data-for-charts' filename='best_episodes_top10.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0urnjcp1fgsul41dyhxpy1gcttq3' name='best_episodes_top10.csv' table='[best_episodes_top10#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv_show' ordinal='0' />
+            <column datatype='string' name='encoded_title' ordinal='1' />
+            <column datatype='integer' name='rating_count' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0urnjcp1fgsul41dyhxpy1gcttq3' name='best_episodes_top10.csv' table='[best_episodes_top10#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv_show' ordinal='0' />
+            <column datatype='string' name='encoded_title' ordinal='1' />
+            <column datatype='integer' name='rating_count' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[best_episodes_top10.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tv_show</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tv_show]</local-name>
+            <parent-name>[best_episodes_top10.csv]</parent-name>
+            <remote-alias>tv_show</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_top10.csv_27DC07FE67AF4EA9AC21F498A55A6C65]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>encoded_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[encoded_title]</local-name>
+            <parent-name>[best_episodes_top10.csv]</parent-name>
+            <remote-alias>encoded_title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_top10.csv_27DC07FE67AF4EA9AC21F498A55A6C65]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rating_count]</local-name>
+            <parent-name>[best_episodes_top10.csv]</parent-name>
+            <remote-alias>rating_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_top10.csv_27DC07FE67AF4EA9AC21F498A55A6C65]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='best_episodes_top10.csv' datatype='table' name='[__tableau_internal_object_id__].[best_episodes_top10.csv_27DC07FE67AF4EA9AC21F498A55A6C65]' role='measure' type='quantitative' />
+      <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+      <column caption='Rating Count' datatype='integer' name='[rating_count]' role='measure' type='quantitative' />
+      <column caption='Tv Show' datatype='string' name='[tv_show]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='best_episodes_top10.csv' id='best_episodes_top10.csv_27DC07FE67AF4EA9AC21F498A55A6C65'>
+            <properties context=''>
+              <relation connection='textscan.0urnjcp1fgsul41dyhxpy1gcttq3' name='best_episodes_top10.csv' table='[best_episodes_top10#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='tv_show' ordinal='0' />
+                  <column datatype='string' name='encoded_title' ordinal='1' />
+                  <column datatype='integer' name='rating_count' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='best_episodes_prop_top10' inline='true' name='federated.1s7xr5f0pll4fb15cuu8m1oz816l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='best_episodes_prop_top10' name='textscan.0ekty3p1v8sjj119zgb510o5yh1n'>
+            <connection class='textscan' directory='C:/Users/ganiy/OneDrive/Documents/IMDB-TV/data-for-charts' filename='best_episodes_prop_top10.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ekty3p1v8sjj119zgb510o5yh1n' name='best_episodes_prop_top10.csv' table='[best_episodes_prop_top10#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv' ordinal='0' />
+            <column datatype='string' name='encoded_title' ordinal='1' />
+            <column datatype='integer' name='episode_count' ordinal='2' />
+            <column datatype='string' name='tv_show' ordinal='3' />
+            <column datatype='integer' name='rating_count' ordinal='4' />
+            <column datatype='real' name='rating_prop' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ekty3p1v8sjj119zgb510o5yh1n' name='best_episodes_prop_top10.csv' table='[best_episodes_prop_top10#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv' ordinal='0' />
+            <column datatype='string' name='encoded_title' ordinal='1' />
+            <column datatype='integer' name='episode_count' ordinal='2' />
+            <column datatype='string' name='tv_show' ordinal='3' />
+            <column datatype='integer' name='rating_count' ordinal='4' />
+            <column datatype='real' name='rating_prop' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[best_episodes_prop_top10.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tv]</local-name>
+            <parent-name>[best_episodes_prop_top10.csv]</parent-name>
+            <remote-alias>tv</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_prop_top10.csv_3517E17EA9E546D99F23D6FBC4A7B8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>encoded_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[encoded_title]</local-name>
+            <parent-name>[best_episodes_prop_top10.csv]</parent-name>
+            <remote-alias>encoded_title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_prop_top10.csv_3517E17EA9E546D99F23D6FBC4A7B8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[episode_count]</local-name>
+            <parent-name>[best_episodes_prop_top10.csv]</parent-name>
+            <remote-alias>episode_count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_prop_top10.csv_3517E17EA9E546D99F23D6FBC4A7B8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tv_show</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tv_show]</local-name>
+            <parent-name>[best_episodes_prop_top10.csv]</parent-name>
+            <remote-alias>tv_show</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_prop_top10.csv_3517E17EA9E546D99F23D6FBC4A7B8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rating_count]</local-name>
+            <parent-name>[best_episodes_prop_top10.csv]</parent-name>
+            <remote-alias>rating_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_prop_top10.csv_3517E17EA9E546D99F23D6FBC4A7B8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating_prop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating_prop]</local-name>
+            <parent-name>[best_episodes_prop_top10.csv]</parent-name>
+            <remote-alias>rating_prop</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_episodes_prop_top10.csv_3517E17EA9E546D99F23D6FBC4A7B8F4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='best_episodes_prop_top10.csv' datatype='table' name='[__tableau_internal_object_id__].[best_episodes_prop_top10.csv_3517E17EA9E546D99F23D6FBC4A7B8F4]' role='measure' type='quantitative' />
+      <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+      <column caption='Episode Count' datatype='integer' name='[episode_count]' role='measure' type='quantitative' />
+      <column caption='Rating Count' datatype='integer' name='[rating_count]' role='measure' type='quantitative' />
+      <column caption='Rating Prop' datatype='real' name='[rating_prop]' role='measure' type='quantitative' />
+      <column caption='Tv' datatype='string' name='[tv]' role='dimension' type='nominal' />
+      <column caption='Tv Show' datatype='string' name='[tv_show]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='best_episodes_prop_top10.csv' id='best_episodes_prop_top10.csv_3517E17EA9E546D99F23D6FBC4A7B8F4'>
+            <properties context=''>
+              <relation connection='textscan.0ekty3p1v8sjj119zgb510o5yh1n' name='best_episodes_prop_top10.csv' table='[best_episodes_prop_top10#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='tv' ordinal='0' />
+                  <column datatype='string' name='encoded_title' ordinal='1' />
+                  <column datatype='integer' name='episode_count' ordinal='2' />
+                  <column datatype='string' name='tv_show' ordinal='3' />
+                  <column datatype='integer' name='rating_count' ordinal='4' />
+                  <column datatype='real' name='rating_prop' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='season_ratings_top10' inline='true' name='federated.1nuaq7n0nc9shs1gx6t5q0efv5m3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='season_ratings_top10' name='textscan.1rcwaly09usym9142nlrp014woeh'>
+            <connection class='textscan' directory='C:/Users/ganiy/OneDrive/Documents/IMDB-TV/data-for-charts' filename='season_ratings_top10.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1rcwaly09usym9142nlrp014woeh' name='season_ratings_top10.csv' table='[season_ratings_top10#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv_season' ordinal='0' />
+            <column datatype='real' name='rating' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1rcwaly09usym9142nlrp014woeh' name='season_ratings_top10.csv' table='[season_ratings_top10#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv_season' ordinal='0' />
+            <column datatype='real' name='rating' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[season_ratings_top10.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tv_season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tv_season]</local-name>
+            <parent-name>[season_ratings_top10.csv]</parent-name>
+            <remote-alias>tv_season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season_ratings_top10.csv_9EAAC88F32FF4750B8D0BF0C8AABB9E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[season_ratings_top10.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[season_ratings_top10.csv_9EAAC88F32FF4750B8D0BF0C8AABB9E9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='season_ratings_top10.csv' datatype='table' name='[__tableau_internal_object_id__].[season_ratings_top10.csv_9EAAC88F32FF4750B8D0BF0C8AABB9E9]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Tv Season' datatype='string' name='[tv_season]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='season_ratings_top10.csv' id='season_ratings_top10.csv_9EAAC88F32FF4750B8D0BF0C8AABB9E9'>
+            <properties context=''>
+              <relation connection='textscan.1rcwaly09usym9142nlrp014woeh' name='season_ratings_top10.csv' table='[season_ratings_top10#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='tv_season' ordinal='0' />
+                  <column datatype='real' name='rating' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='imdb_data_big4' inline='true' name='federated.153cwpk1l1jv1o14q4ffx05jxlpz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='imdb_data_big4' name='textscan.0bems280q0ord81dfquu70wdtq0k'>
+            <connection class='textscan' directory='C:/Users/ganiy/OneDrive/Documents/IMDB-TV/data-for-charts' filename='imdb_data_big4.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0bems280q0ord81dfquu70wdtq0k' name='imdb_data_big4.csv' table='[imdb_data_big4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv' ordinal='0' />
+            <column datatype='integer' name='season' ordinal='1' />
+            <column datatype='integer' name='episode_number' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='date' name='airdate' ordinal='4' />
+            <column datatype='real' name='rating' ordinal='5' />
+            <column datatype='integer' name='total_votes' ordinal='6' />
+            <column datatype='string' name='desc' ordinal='7' />
+            <column datatype='string' name='encoded_title' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0bems280q0ord81dfquu70wdtq0k' name='imdb_data_big4.csv' table='[imdb_data_big4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='tv' ordinal='0' />
+            <column datatype='integer' name='season' ordinal='1' />
+            <column datatype='integer' name='episode_number' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='date' name='airdate' ordinal='4' />
+            <column datatype='real' name='rating' ordinal='5' />
+            <column datatype='integer' name='total_votes' ordinal='6' />
+            <column datatype='string' name='desc' ordinal='7' />
+            <column datatype='string' name='encoded_title' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tv]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>tv</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[episode_number]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>episode_number</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airdate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[airdate]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>airdate</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_votes]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>total_votes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[desc]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>desc</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>encoded_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[encoded_title]</local-name>
+            <parent-name>[imdb_data_big4.csv]</parent-name>
+            <remote-alias>encoded_title</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='imdb_data_big4.csv' datatype='table' name='[__tableau_internal_object_id__].[imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0]' role='measure' type='quantitative' />
+      <column caption='Airdate' datatype='date' name='[airdate]' role='dimension' type='ordinal' />
+      <column caption='Desc' datatype='string' name='[desc]' role='dimension' type='nominal' />
+      <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+      <column caption='Episode Number' datatype='integer' name='[episode_number]' role='dimension' type='ordinal' />
+      <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Total Votes' datatype='integer' name='[total_votes]' role='measure' type='quantitative' />
+      <column caption='Tv' datatype='string' name='[tv]' role='dimension' type='nominal' />
+      <column-instance column='[tv]' derivation='None' name='[none:tv:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:tv:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Breaking Bad&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Wire&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Sopranos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Game of Thrones&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='imdb_data_big4.csv' id='imdb_data_big4.csv_B5DBE22FC3D64AFAAA726B850E4F68F0'>
+            <properties context=''>
+              <relation connection='textscan.0bems280q0ord81dfquu70wdtq0k' name='imdb_data_big4.csv' table='[imdb_data_big4#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='tv' ordinal='0' />
+                  <column datatype='integer' name='season' ordinal='1' />
+                  <column datatype='integer' name='episode_number' ordinal='2' />
+                  <column datatype='string' name='title' ordinal='3' />
+                  <column datatype='date' name='airdate' ordinal='4' />
+                  <column datatype='real' name='rating' ordinal='5' />
+                  <column datatype='integer' name='total_votes' ordinal='6' />
+                  <column datatype='string' name='desc' ordinal='7' />
+                  <column datatype='string' name='encoded_title' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='The Most Prolific TV Shows' type='sheet' worksheet='Most Prolific' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='The Most Prolific TV Shows' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average Episode Ratings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='TechnicBold' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tv_dataset' name='federated.1ts58le12zi5t1192bns30fr5htb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ts58le12zi5t1192bns30fr5htb'>
+            <column caption='Ranking' datatype='integer' name='[Calculation_1498009826908364800]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK_UNIQUE(AVG([rating]), &apos;desc&apos;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='TV_encoded' datatype='string' name='[Calculation_513973309040922640]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[tv] + &quot; &quot; + [encoded_title]' />
+            </column>
+            <column-instance column='[rating]' derivation='Avg' name='[avg:rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_513973309040922640]' derivation='None' name='[none:Calculation_513973309040922640:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tv]' derivation='None' name='[none:tv:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column caption='Tv' datatype='string' name='[tv]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1498009826908364800]' derivation='User' name='[usr:Calculation_1498009826908364800:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ts58le12zi5t1192bns30fr5htb].[none:rating:qk]' included-values='in-range'>
+            <min>0.11</min>
+            <max>9.9000000000000004</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1ts58le12zi5t1192bns30fr5htb].[usr:Calculation_1498009826908364800:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]' direction='DESC' measure-to-sort-by='[federated.1ts58le12zi5t1192bns30fr5htb].[avg:rating:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1ts58le12zi5t1192bns30fr5htb].[usr:Calculation_1498009826908364800:qk]</column>
+            <column>[federated.1ts58le12zi5t1192bns30fr5htb].[none:rating:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ts58le12zi5t1192bns30fr5htb].[avg:rating:qk]' field-type='quantitative' max='10.0' min='9.0' range-type='fixed' scale='log' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.1ts58le12zi5t1192bns30fr5htb].[avg:rating:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1ts58le12zi5t1192bns30fr5htb].[none:Calculation_513973309040922640:nk]' value='false' />
+            <format attr='font-size' field='[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]' value='10' />
+            <format attr='color' field='[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e2ad00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e2ad00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ts58le12zi5t1192bns30fr5htb].[avg:rating:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Avg. Rating:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1ts58le12zi5t1192bns30fr5htb].[avg:rating:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.1ts58le12zi5t1192bns30fr5htb].[avg:rating:qk]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk] / [federated.1ts58le12zi5t1192bns30fr5htb].[none:Calculation_513973309040922640:nk])</rows>
+        <cols>[federated.1ts58le12zi5t1192bns30fr5htb].[avg:rating:qk]</cols>
+      </table>
+      <simple-id uuid='{9F6CD34A-7B03-4E9D-88CE-9068E6CE8ADB}' />
+    </worksheet>
+    <worksheet name='Average Episode Votes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='TechnicBold' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='tv_dataset' name='federated.1ts58le12zi5t1192bns30fr5htb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ts58le12zi5t1192bns30fr5htb'>
+            <column caption='New_Ranking' datatype='integer' name='[Calculation_1498009826912362497]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK_UNIQUE(AVG([total_votes]), &apos;desc&apos;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='TV_encoded' datatype='string' name='[Calculation_513973309040922640]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[tv] + &quot; &quot; + [encoded_title]' />
+            </column>
+            <column-instance column='[total_votes]' derivation='Avg' name='[avg:total_votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_513973309040922640]' derivation='None' name='[none:Calculation_513973309040922640:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rating]' derivation='None' name='[none:rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tv]' derivation='None' name='[none:tv:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column caption='Total Votes' datatype='integer' name='[total_votes]' role='measure' type='quantitative' />
+            <column caption='Tv' datatype='string' name='[tv]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1498009826912362497]' derivation='User' name='[usr:Calculation_1498009826912362497:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1ts58le12zi5t1192bns30fr5htb].[none:rating:qk]' included-values='in-range'>
+            <min>0.13</min>
+            <max>9.9000000000000004</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1ts58le12zi5t1192bns30fr5htb].[usr:Calculation_1498009826912362497:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1ts58le12zi5t1192bns30fr5htb].[none:Calculation_513973309040922640:nk]' direction='DESC' measure-to-sort-by='[federated.1ts58le12zi5t1192bns30fr5htb].[avg:total_votes:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1ts58le12zi5t1192bns30fr5htb].[usr:Calculation_1498009826912362497:qk]</column>
+            <column>[federated.1ts58le12zi5t1192bns30fr5htb].[none:rating:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1ts58le12zi5t1192bns30fr5htb].[avg:total_votes:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1ts58le12zi5t1192bns30fr5htb].[none:Calculation_513973309040922640:nk]' value='false' />
+            <format attr='font-size' field='[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]' value='10' />
+            <format attr='color' field='[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e2ad00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#e2ad00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ts58le12zi5t1192bns30fr5htb].[avg:total_votes:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Avg. Total Votes:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1ts58le12zi5t1192bns30fr5htb].[avg:total_votes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.1ts58le12zi5t1192bns30fr5htb].[avg:total_votes:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1ts58le12zi5t1192bns30fr5htb].[none:Calculation_513973309040922640:nk] / [federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk])</rows>
+        <cols>[federated.1ts58le12zi5t1192bns30fr5htb].[avg:total_votes:qk]</cols>
+      </table>
+      <simple-id uuid='{F9E52AF2-5C32-4BD3-86EC-AE12CCD34FC4}' />
+    </worksheet>
+    <worksheet name='Best Seasons'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='season_ratings_top10' name='federated.1nuaq7n0nc9shs1gx6t5q0efv5m3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nuaq7n0nc9shs1gx6t5q0efv5m3'>
+            <column-instance column='[tv_season]' derivation='None' name='[none:tv_season:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column-instance column='[rating]' derivation='Sum' name='[sum:rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Tv Season' datatype='string' name='[tv_season]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[none:tv_season:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Chernobyl 1&quot;</bucket>
+              <bucket>&quot;Attack on Titan 3&quot;</bucket>
+              <bucket>&quot;Aspirants 1&quot;</bucket>
+              <bucket>&quot;Attack on Titan 4&quot;</bucket>
+              <bucket>&quot;Breaking Bad 5&quot;</bucket>
+              <bucket>&quot;Brass Eye 2&quot;</bucket>
+              <bucket>&quot;Samurai Jack 5&quot;</bucket>
+              <bucket>&quot;Gullak 2&quot;</bucket>
+              <bucket>&quot;Young Justice 4&quot;</bucket>
+              <bucket>&quot;Attack on Titan 2&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[sum:rating:qk]' field-type='quantitative' max='9.7' min='9.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[sum:rating:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[none:tv_season:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[none:tv_season:nk]' value='bold' />
+            <format attr='font-size' field='[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[none:tv_season:nk]' value='10' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e2ad00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[sum:rating:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[sum:rating:qk]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[none:tv_season:nk]</rows>
+        <cols>[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[sum:rating:qk]</cols>
+      </table>
+      <simple-id uuid='{431259A6-64E8-42ED-A840-BF559F4E1EA0}' />
+    </worksheet>
+    <worksheet name='IMDb Ratings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e2ad00' fontname='TechnicBold' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IMDb_top_250' name='federated.130vvcl13t03u314euec501l4czj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130vvcl13t03u314euec501l4czj'>
+            <column caption='Ranking' datatype='integer' name='[Calculation_513973309018107905]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK_UNIQUE(AVG([rating]), &apos;desc&apos;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Title_encoded' datatype='string' name='[Calculation_513973309034323982]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[title] + &quot; &quot; + [encoded_title]' />
+            </column>
+            <column-instance column='[rating]' derivation='Avg' name='[avg:rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_513973309034323982]' derivation='None' name='[none:Calculation_513973309034323982:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Rating' datatype='real' name='[rating]' role='measure' type='quantitative' />
+            <column-instance column='[rating]' derivation='Sum' name='[sum:rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_513973309018107905]' derivation='User' name='[usr:Calculation_513973309018107905:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.130vvcl13t03u314euec501l4czj].[usr:Calculation_513973309018107905:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' direction='DESC' measure-to-sort-by='[federated.130vvcl13t03u314euec501l4czj].[avg:rating:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.130vvcl13t03u314euec501l4czj].[usr:Calculation_513973309018107905:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.130vvcl13t03u314euec501l4czj].[sum:rating:qk]' field-type='quantitative' max='9.6999999999999993' min='9.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.130vvcl13t03u314euec501l4czj].[sum:rating:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.130vvcl13t03u314euec501l4czj].[sum:rating:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' value='156' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.130vvcl13t03u314euec501l4czj].[none:Calculation_513973309034323982:nk]' value='false' />
+            <format attr='color' field='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' value='#e2ad00' />
+            <format attr='font-weight' field='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' value='bold' />
+            <format attr='font-size' field='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' value='10' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.130vvcl13t03u314euec501l4czj].[none:Calculation_513973309034323982:nk]' />
+              <text column='[federated.130vvcl13t03u314euec501l4czj].[sum:rating:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#e2ad00' fontsize='12'>&lt;</run>
+                <run fontcolor='#e2ad00' fontsize='12'>[federated.130vvcl13t03u314euec501l4czj].[sum:rating:qk]</run>
+                <run fontcolor='#e2ad00' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e2ad00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.130vvcl13t03u314euec501l4czj].[none:title:nk] / [federated.130vvcl13t03u314euec501l4czj].[none:Calculation_513973309034323982:nk])</rows>
+        <cols>[federated.130vvcl13t03u314euec501l4czj].[sum:rating:qk]</cols>
+      </table>
+      <simple-id uuid='{8E693EE1-D119-4D5D-83D1-6EDAD8FE51ED}' />
+    </worksheet>
+    <worksheet name='IMDb Votes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e2ad00' fontname='TechnicBold' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='IMDb_top_250' name='federated.130vvcl13t03u314euec501l4czj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130vvcl13t03u314euec501l4czj'>
+            <column caption='Ranking2' datatype='integer' name='[Calculation_513973309027131394]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK_UNIQUE(SUM([total_votes]), &apos;desc&apos;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Title_encoded' datatype='string' name='[Calculation_513973309034323982]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[title] + &quot; &quot; + [encoded_title]' />
+            </column>
+            <column caption='Encoded Title' datatype='string' name='[encoded_title]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_513973309034323982]' derivation='None' name='[none:Calculation_513973309034323982:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_votes]' derivation='Sum' name='[sum:total_votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='Total Votes' datatype='integer' name='[total_votes]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_513973309027131394]' derivation='User' name='[usr:Calculation_513973309027131394:qk:3]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.130vvcl13t03u314euec501l4czj].[usr:Calculation_513973309027131394:qk:3]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' direction='DESC' measure-to-sort-by='[federated.130vvcl13t03u314euec501l4czj].[sum:total_votes:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.130vvcl13t03u314euec501l4czj].[usr:Calculation_513973309027131394:qk:3]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.130vvcl13t03u314euec501l4czj].[sum:total_votes:qk]' field-type='quantitative' max='2500000' min='20847' range-type='fixed' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.130vvcl13t03u314euec501l4czj].[sum:total_votes:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' value='#000000' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.130vvcl13t03u314euec501l4czj].[none:Calculation_513973309034323982:nk]' value='false' />
+            <format attr='color' field='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' value='#e2ad00' />
+            <format attr='font-weight' field='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' value='bold' />
+            <format attr='font-size' field='[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]' value='10' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.130vvcl13t03u314euec501l4czj].[sum:total_votes:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e2ad00' fontsize='12'><![CDATA[<[federated.130vvcl13t03u314euec501l4czj].[sum:total_votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#e2ad00' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.130vvcl13t03u314euec501l4czj].[none:title:nk] / [federated.130vvcl13t03u314euec501l4czj].[none:Calculation_513973309034323982:nk])</rows>
+        <cols>[federated.130vvcl13t03u314euec501l4czj].[sum:total_votes:qk]</cols>
+      </table>
+      <simple-id uuid='{2F43FCAA-EA0E-4BCF-8AF0-3FE8A0F5D9BF}' />
+    </worksheet>
+    <worksheet name='Most Prolific'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='best_episodes_top10' name='federated.07tv33b0k5bph114k41uz1gte5hw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07tv33b0k5bph114k41uz1gte5hw'>
+            <column-instance column='[tv_show]' derivation='None' name='[none:tv_show:nk]' pivot='key' type='nominal' />
+            <column caption='Rating Count' datatype='integer' name='[rating_count]' role='measure' type='quantitative' />
+            <column-instance column='[rating_count]' derivation='Sum' name='[sum:rating_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Tv Show' datatype='string' name='[tv_show]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.07tv33b0k5bph114k41uz1gte5hw].[none:tv_show:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.07tv33b0k5bph114k41uz1gte5hw].[sum:rating_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.07tv33b0k5bph114k41uz1gte5hw].[sum:rating_count:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.07tv33b0k5bph114k41uz1gte5hw].[none:tv_show:nk]' value='10' />
+            <format attr='color' field='[federated.07tv33b0k5bph114k41uz1gte5hw].[none:tv_show:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.07tv33b0k5bph114k41uz1gte5hw].[none:tv_show:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e2ad00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07tv33b0k5bph114k41uz1gte5hw].[sum:rating_count:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.07tv33b0k5bph114k41uz1gte5hw].[sum:rating_count:qk]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07tv33b0k5bph114k41uz1gte5hw].[none:tv_show:nk]</rows>
+        <cols>[federated.07tv33b0k5bph114k41uz1gte5hw].[sum:rating_count:qk]</cols>
+      </table>
+      <simple-id uuid='{F67D2A0E-0A3B-41CE-832C-5F4F85A3ADAD}' />
+    </worksheet>
+    <worksheet name='Most Prolific by Proportion'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='best_episodes_prop_top10' name='federated.1s7xr5f0pll4fb15cuu8m1oz816l' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1s7xr5f0pll4fb15cuu8m1oz816l'>
+            <column-instance column='[tv]' derivation='None' name='[none:tv:nk]' pivot='key' type='nominal' />
+            <column caption='Rating Prop' datatype='real' name='[rating_prop]' role='measure' type='quantitative' />
+            <column-instance column='[rating_prop]' derivation='Sum' name='[sum:rating_prop:qk]' pivot='key' type='quantitative' />
+            <column caption='Tv' datatype='string' name='[tv]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[none:tv:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[sum:rating_prop:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[sum:rating_prop:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[none:tv:nk]' value='10' />
+            <format attr='color' field='[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[none:tv:nk]' value='#e2ad00' />
+            <format attr='font-weight' field='[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[none:tv:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[sum:rating_prop:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e2ad00' fontsize='12'>&lt;</run>
+                <run bold='true' fontcolor='#e2ad00' fontsize='12'>[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[sum:rating_prop:qk]</run>
+                <run bold='true' fontcolor='#e2ad00' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e2ad00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[none:tv:nk]</rows>
+        <cols>[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[sum:rating_prop:qk]</cols>
+      </table>
+      <simple-id uuid='{BB8E450C-FABC-474B-9A3A-320348E61A63}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='The Most Prolific TV Shows'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#e2ad00' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98454' id='8' param='vert' w='99166' x='417' y='773'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='7053' id='9' w='99166' x='417' y='773'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7150' id='10' w='99166' x='417' y='7826'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Both charts represent the top 10 most frequent shows to the top 1000 IMDb episodes list. The one on the left is strictly based on their frequencies. The one on the right is based on what percent of all their episodes are on the top 1000 IMDb episodes list. All shows on the right chart have at least 30 episodes.</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='84251' id='6' w='99166' x='417' y='14976'>
+              <zone h='84251' id='3' name='Most Prolific' show-title='false' w='49564' x='417' y='14976'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='84251' id='5' name='Most Prolific by Proportion' show-title='false' w='49602' x='49981' y='14976'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='16' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98454' id='15' param='vert' w='99166' x='417' y='773'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='7053' id='9' w='99166' x='417' y='773'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7150' id='10' w='99166' x='417' y='7826'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='12'>Both charts represent the top 10 most frequent shows to the top 1000 IMDb episodes list. The one on the left is strictly based on their frequencies. The one on the right is based on what percent of all their episodes are on the top 1000 IMDb episodes list. All shows on the right chart have at least 30 episodes.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='84251' id='3' is-fixed='true' name='Most Prolific' show-title='false' w='49564' x='417' y='14976'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='84251' id='5' is-fixed='true' name='Most Prolific by Proportion' show-title='false' w='49602' x='49981' y='14976'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{459C33F2-3E9E-4953-B139-604248E669AE}' />
+    </dashboard>
+    <dashboard name='Top 10 TV Seasons (based on average episode ratings)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#e2ad00' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98044' id='7' param='vert' w='99002' x='499' y='978'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='8924' id='8' w='99002' x='499' y='978'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='89120' id='5' w='99002' x='499' y='9902'>
+              <zone h='89120' id='3' name='Best Seasons' show-title='false' w='99002' x='499' y='9902'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='14' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98044' id='13' param='vert' w='99002' x='499' y='978'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='8924' id='8' w='99002' x='499' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='89120' id='3' is-fixed='true' name='Best Seasons' show-title='false' w='99002' x='499' y='9902'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{764D88D4-A4C9-4325-9FCC-164B95ECEEE9}' />
+    </dashboard>
+    <dashboard name='Top 10 TV shows on IMDb - Ratings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#e2ad00' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98454' id='8' param='vert' w='99166' x='417' y='773'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='7053' id='9' w='99166' x='417' y='773'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='91401' id='6' w='99166' x='417' y='7826'>
+              <zone h='91401' id='3' name='Average Episode Ratings' w='49567' x='417' y='7826'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91401' id='5' name='IMDb Ratings' w='49599' x='49984' y='7826'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='17' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98454' id='16' param='vert' w='99166' x='417' y='773'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='7053' id='9' w='99166' x='417' y='773'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91401' id='3' is-fixed='true' name='Average Episode Ratings' w='49567' x='417' y='7826'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91401' id='5' is-fixed='true' name='IMDb Ratings' w='49599' x='49984' y='7826'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D2407EA3-BA60-4EA4-8B79-5EAECE4FB5F9}' />
+    </dashboard>
+    <dashboard name='Top 10 TV shows on IMDb - Votes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#e2ad00' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98454' id='8' param='vert' w='99166' x='417' y='773'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='7053' id='9' w='99166' x='417' y='773'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='91401' id='6' w='99166' x='417' y='7826'>
+              <zone h='91401' id='3' name='Average Episode Votes' w='49568' x='417' y='7826'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91401' id='5' name='IMDb Votes' w='49598' x='49985' y='7826'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Tableau Semibold' fontsize='24'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='17' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98454' id='16' param='vert' w='99166' x='417' y='773'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='7053' id='9' w='99166' x='417' y='773'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91401' id='3' is-fixed='true' name='Average Episode Votes' w='49568' x='417' y='7826'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91401' id='5' is-fixed='true' name='IMDb Votes' w='49598' x='49985' y='7826'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DDF5180F-9C81-4DD0-9EC7-DB0739F52948}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='199'>
+    <window class='dashboard' name='Top 10 TV shows on IMDb - Ratings'>
+      <viewpoints>
+        <viewpoint name='Average Episode Ratings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='IMDb Ratings'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{9602EF5E-86F7-434E-AD0A-A2348CE58657}' />
+    </window>
+    <window class='dashboard' name='Top 10 TV shows on IMDb - Votes'>
+      <viewpoints>
+        <viewpoint name='Average Episode Votes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='IMDb Votes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{450B2075-7C13-4935-BCDF-2180E09FBD6A}' />
+    </window>
+    <window class='dashboard' name='The Most Prolific TV Shows'>
+      <viewpoints>
+        <viewpoint name='Most Prolific'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Most Prolific by Proportion'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{8DDEEBE3-5AC5-4194-B199-FDFFFB524FAC}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Top 10 TV Seasons (based on average episode ratings)'>
+      <viewpoints>
+        <viewpoint name='Best Seasons'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{71CBE808-E3CE-4F87-969D-DEEF1CCFEC28}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Episode Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[attr:desc:nk]</field>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:Calculation_513973309040922640:nk]</field>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:desc:nk]</field>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:rating:qk]</field>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0AFE5BFD-E983-44AF-8ECF-8D425F83D05F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Average Episode Votes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:Calculation_513973309040922640:nk]</field>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:rating:qk]</field>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:season:ok]</field>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:tv:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{337947E0-3400-49A0-AD03-907CD3FFDBF1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Best Seasons'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1nuaq7n0nc9shs1gx6t5q0efv5m3].[none:tv_season:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A445EF40-EA94-463C-B192-2DAADA442D52}' />
+    </window>
+    <window class='worksheet' hidden='true' name='IMDb Ratings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.130vvcl13t03u314euec501l4czj].[none:Calculation_513973309034323982:nk]</field>
+            <field>[federated.130vvcl13t03u314euec501l4czj].[none:encoded_title:nk]</field>
+            <field>[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]</field>
+            <field>[federated.1ts58le12zi5t1192bns30fr5htb].[none:title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6459FAA2-EBD8-4508-A717-397EF09A9F55}' />
+    </window>
+    <window class='worksheet' hidden='true' name='IMDb Votes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.130vvcl13t03u314euec501l4czj].[none:Calculation_513973309030793223:nk]</field>
+            <field>[federated.130vvcl13t03u314euec501l4czj].[none:Calculation_513973309034323982:nk]</field>
+            <field>[federated.130vvcl13t03u314euec501l4czj].[none:title:nk]</field>
+            <field>[federated.130vvcl13t03u314euec501l4czj].[usr:Calculation_513973309027635203:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{56FA2230-A529-4A2A-93D4-62E2650DCCCA}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Most Prolific'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.07tv33b0k5bph114k41uz1gte5hw].[none:tv_show:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{28AC467D-14AA-4C31-A50F-49142F59E945}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Most Prolific by Proportion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <fields>
+                  <field>[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[none:tv:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;Rick and Morty&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1s7xr5f0pll4fb15cuu8m1oz816l].[none:tv:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B8F6DBE9-8C52-4213-91F2-941C7EDA32D3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='The Most Prolific TV Shows' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 TV Seasons (based on average episode ratings)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 TV shows on IMDb - Ratings' width='192'>
+      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
+      EiJ2fAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 TV shows on IMDb - Votes' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
