@@ -1,11 +1,11 @@
-tv,encoded_title,episode_count,tv_show,rating_count,rating_prop
-Attack on Titan,tt2560140,81,Attack on Titan,42,0.5185185185185185
-Young Justice,tt1641384,85,Young Justice,24,0.2823529411764706
-Mr. Robot,tt4158110,45,Mr. Robot,12,0.26666666666666666
-Game of Thrones,tt0944947,73,Game of Thrones,19,0.2602739726027397
-Breaking Bad,tt0903747,62,Breaking Bad,16,0.25806451612903225
-Daredevil,tt3322312,39,Daredevil,8,0.20512820512820512
-Better Call Saul,tt3032476,50,Better Call Saul,9,0.18
-Peaky Blinders,tt2442560,30,Peaky Blinders,5,0.16666666666666666
-Avatar: The Last Airbender,tt0417299,62,Avatar: The Last Airbender,9,0.14516129032258066
-Rick and Morty,tt2861424,51,Rick and Morty,7,0.13725490196078433
+tv,encoded_title,episode_count,tv_show,show_desc,rating_count,rating_prop
+Attack on Titan,tt2560140,81,Attack on Titan,"After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.",42,0.5185185185185185
+Young Justice,tt1641384,85,Young Justice,Teenage superheroes strive to prove themselves as members of the Justice League.,24,0.2823529411764706
+Mr. Robot,tt4158110,45,Mr. Robot,"Elliot, a brilliant but highly unstable young cyber-security engineer and vigilante hacker, becomes a key figure in a complex game of global dominance when he and his shadowy allies try to take down the corrupt corporation he works for.",12,0.26666666666666666
+Game of Thrones,tt0944947,73,Game of Thrones,"Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",19,0.2602739726027397
+Breaking Bad,tt0903747,62,Breaking Bad,A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.,16,0.25806451612903225
+Daredevil,tt3322312,39,Daredevil,"A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.",8,0.20512820512820512
+Better Call Saul,tt3032476,50,Better Call Saul,"The trials and tribulations of criminal lawyer Jimmy McGill in the time before he established his strip-mall law office in Albuquerque, New Mexico.",9,0.18
+Peaky Blinders,tt2442560,30,Peaky Blinders,"A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby.",5,0.16666666666666666
+Avatar: The Last Airbender,tt0417299,62,Avatar: The Last Airbender,"In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.",9,0.14516129032258066
+Rick and Morty,tt2861424,51,Rick and Morty,An animated series that follows the exploits of a super scientist and his not-so-bright grandson.,7,0.13725490196078433

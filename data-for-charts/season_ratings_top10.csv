@@ -1,11 +1,11 @@
-tv_season,rating
-Chernobyl 1,9.58
-Attack on Titan 3,9.522727272727273
-Attack on Titan 4,9.504545454545454
-Aspirants 1,9.48
-Breaking Bad 5,9.425
-Brass Eye 2,9.4
-Samurai Jack 5,9.35
-Attack on Titan 2,9.341666666666667
-Gullak 2,9.34
-Young Justice 4,9.330769230769231
+tv_season,rating,show_desc
+Chernobyl 1,9.58,"In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes."
+Attack on Titan 3,9.522727272727273,"After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction."
+Attack on Titan 4,9.504545454545454,"After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction."
+Aspirants 1,9.48,It is the story of the journey of three UPSC (public service competitive exams in India) aspirants and their friendship against all odds.
+Breaking Bad 5,9.425,A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.
+Brass Eye 2,9.4,"Controversal spoof of current affairs television, and the role of celebrity in the UK."
+Samurai Jack 5,9.35,"A samurai, sent through time, fights to return home and save the world."
+Attack on Titan 2,9.341666666666667,"After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction."
+Gullak 2,9.34,"Set in quaint by-lanes in the heart of India, Gullak is a collection of disarming and relatable tales of the Mishra family."
+Young Justice 4,9.330769230769231,Teenage superheroes strive to prove themselves as members of the Justice League.
