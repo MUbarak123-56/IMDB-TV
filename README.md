@@ -36,6 +36,7 @@ The cumulative-data/ folder contains three data sets. The IMDb_top_250.csv file 
 - It was noticed that some Attack on Titan episodes' airdates for season 1 are not chronological. This stems from the fact that the some of the airdates are the english airdate rather than the japanese airdate. Due to the fact that it takes a while to convert an anime from its original language into an english version, the airdates of the same episode tend to be wide apart for both languages. This phenomenon may be observed for other animes as well.
 
 ## Resources
+- [IMDb](https://www.imdb.com/)
 - [Link to Top 250 TV shows on IMDb](https://www.imdb.com/chart/toptv/)
 - [Link to Top 1000 TV series episodes on IMDb](https://www.imdb.com/search/title/?num_votes=1000,&sort=user_rating,desc&title_type=tv_episode)
 
