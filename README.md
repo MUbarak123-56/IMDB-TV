@@ -33,6 +33,8 @@ The cumulative-data/ folder contains three data sets. The IMDb_top_250.csv file 
 
 The data-for-charts/ folder contains data sets that were used to build dashboards on Tableau. The dashboards are currently hosted live on Tableau Public through this [link](https://public.tableau.com/views/IMDbTVShowAnalysis/Top10TVshowsonIMDb-Ratings?:language=en-US&:display_count=n&:origin=viz_share_link).
 
+All three datasets are currently presented [here](https://www.kaggle.com/muby98/imdb-tv-show-data-sets-top-250-tv-shows-on-imdb) on Kaggle.
+
 ### Note about data
 
 - It was noticed that some Attack on Titan episodes' airdates for season 1 are not chronological. This stems from the fact that the some of the airdates are the english airdate rather than the japanese airdate. Due to the fact that it takes a while to convert an anime from its original language into an english version, the airdates of the same episode tend to be wide apart for both languages. This phenomenon may be observed for other animes as well.
