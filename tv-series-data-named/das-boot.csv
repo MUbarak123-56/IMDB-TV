@@ -1,4 +1,4 @@
-tv,season,episode_number,title,airdate,rating,total_votes,episode_desc,encoded_title,show_desc
-Das Boot,1,1,Part 1,"Feb 24, 1985",8.7,287,The German U-Boat crew embarks on its mission at the beginning of World War II.,tt0081834,A World War II German U-Boat crew have a terrifying patrol mission in the early days of the war.
-Das Boot,1,2,Part 2,"Feb 27, 1985",8.7,271,The crew is trying to carry out its mission which has proven to be extremely difficult.,tt0081834,A World War II German U-Boat crew have a terrifying patrol mission in the early days of the war.
-Das Boot,1,3,Part 3,"Mar 3, 1985",8.9,237,The crew tries to reach a safe harbor and replenish supplies.,tt0081834,A World War II German U-Boat crew have a terrifying patrol mission in the early days of the war.
+tv,season,episode_number,title,airdate,rating,total_votes,episode_desc,episode_url,encoded_title,show_desc
+Das Boot,1,1,Part 1,"Feb 24, 1985",8.6,295,The German U-Boat crew embarks on its mission at the beginning of World War II.,https://www.imdb.com/title/tt1915881/,tt0081834,A World War II German U-Boat crew have a terrifying patrol mission in the early days of the war.
+Das Boot,1,2,Part 2,"Feb 27, 1985",8.7,278,The crew is trying to carry out its mission which has proven to be extremely difficult.,https://www.imdb.com/title/tt1915883/,tt0081834,A World War II German U-Boat crew have a terrifying patrol mission in the early days of the war.
+Das Boot,1,3,Part 3,"Mar 3, 1985",8.9,244,The crew tries to reach a safe harbor and replenish supplies.,https://www.imdb.com/title/tt5020728/,tt0081834,A World War II German U-Boat crew have a terrifying patrol mission in the early days of the war.
