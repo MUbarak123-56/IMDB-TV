@@ -1,4 +1,5 @@
 # IMDb TV Series Project
+[![View on Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)](https://public.tableau.com/app/profile/mubarak.ganiyu/viz/IMDbTVShowAnalysis/Top10TVshowsonIMDb-Ratings)
 
 ## Directory
 - [Background and Objective](#background-and-objective)
