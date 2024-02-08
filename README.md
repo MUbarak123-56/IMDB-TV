@@ -50,4 +50,4 @@ All three datasets are currently presented [here](https://www.kaggle.com/muby98/
 - Jupyter Notebooks
 
 ## Contact Info
-- Mubarak Ganiyu (mubarak.a.ganiyu@vanderbilt.edu)
+- Mubarak Ganiyu (ganiyubaraq@gmail.com)
